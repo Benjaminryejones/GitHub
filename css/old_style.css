@@ -1,0 +1,264 @@
+/*
+Theme Name:     RB
+Description:
+Author:         admin
+Template:       virtue_premium
+
+(optional values you can add: Theme URI, Author URI, Version)
+*/
+
+@import url("../virtue_premium/style.css");
+
+/*****Home Page Hover Effects*******/
+
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	min-width: 300px;
+	max-width: 1170px;
+	max-height: 800px;
+	width: 100%;
+	background: #3085a3;
+	text-align: center;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.75;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #ffffff;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+        margin-top: 20px;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h1,
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+       color: #f4f4f4;
+ text-shadow: 0px 0px 8px rgba(0,0,0,.5);
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/*Start Hover Effects*/
+
+figure.effect-chico img {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.35);
+	transform: scale(1.35);
+}
+
+figure.effect-chico:hover img {
+	opacity: 0.45;
+	-webkit-transform: scale(1.25);
+	transform: scale(1.25);
+}
+
+figure.effect-chico figcaption {
+	padding: 3em;
+}
+
+figure.effect-chico figcaption::before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 1px solid #fff;
+	content: '';
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+figure.effect-chico figcaption::before,
+figure.effect-chico p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-chico h2 {
+	padding: 20% 0 20px 0;
+}
+
+figure.effect-chico h1 {
+padding: 12% 0 20px 0;
+}
+
+figure.effect-chico p {
+	margin: 0 auto;
+	max-width: 500px;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+        margin-bottom: 16px;
+
+}
+
+figure.effect-chico:hover figcaption::before,
+figure.effect-chico:hover p {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-chico:hover a {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.blogbtn {
+        border: 2px solid rgba(255,255,255,1);
+        max-width: 400px;
+       margin-top: 36px;
+       padding: 6px 10px;
+       border-radius: 10px;
+       background-color: rgba(0,0,0,.4);
+      color: #f7f7f7 !important;
+}
+
+.blogbtn:hover {
+    color: #3cb1dd !important;
+}
+
+/******End Home Page Hover*****/
+
+/******Begin CV*******/
+
+#btn-cv {
+		overflow: hidden;
+	position: relative;
+	text-decoration: none;
+}
+/**********End CV************/
+
+/*****MENU SHADOW******/
+
+.headerclass {
+-webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.2) !important;
+   -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+}
+
+.nav-trigger-case {
+-webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.2) !important;
+   -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+}
+
+/*******END MENU SHADOW****/
+
+/***BLOG POST CUSTOMIZATION***/
+.entry-content {
+	background: rgba(255,255,255,.5);
+	padding: 18px;
+	border-radius: 9px;
+}
+
+.entry-content img {
+	border: 2px solid rgba(0,0,0,.7);
+	padding: 0px;
+}
+
+.post .entry-title,
+.post .entry-title a {
+	color: #00add8;
+}
+
+.post .entry-title a:hover {
+	color: #0862d8;
+}
+
+.postcontent {
+	background: rgba(255,255,255,.5);
+	border: none;
+}
+
+.postlist article {
+	border: none;
+}
+
+.sidebar {
+	background: rgba(255,255,255,.5);
+	padding: 12px;
+}
+
+/****END BLOG POST*******/
+
+/*******CONTACT********/
+
+.resizor {
+	-webkit-transition: -webkit-transform 0.4s,;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+}
+.resizor:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+
+/******END CONTACT******/
+
+/*****MISC*******/
+#nav-main, .nav-main {
+	margin: 0;
+}
+
+.contentclass {
+	padding-top: 0px;
+}
+
+#hp-container .col-md-6,
+#hp-container .col-md-12 {
+	padding-right: 7.5px !important;
+	padding-left: 7.5px !important;
+}

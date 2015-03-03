@@ -1,0 +1,225 @@
+/* ==== Home Page ================ */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	min-width: 300px;
+	max-width: 1170px;
+	max-height: 800px;
+	width: 100%;
+	background: #3085a3;
+	text-align: center;
+}
+
+@media #{$screen-md-max} {
+	.grid figure {
+		min-width: 200px;
+		max-width: 640px;
+		max-height: 600px;
+	}
+}
+
+@media #{$screen-sm-max} {
+	#topRow p {
+		display: none;
+	}
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.75;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #ffffff;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+@media #{$screen-md-max} {
+	.grid figure figcaption {
+	padding: .9em;
+	color: #ffffff;
+	font-size: 1em;
+	}
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+    margin-top: 20px;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h1,
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+    color: #f4f4f4;
+ 	text-shadow: 0px 0px 8px rgba(0,0,0,.5);
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/*Start Hover Effects*/
+
+figure.effect-chico img {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.35);
+	transform: scale(1.35);
+}
+
+@media #{$screen-md-max} {
+	figure.effect-chico img {
+		-webkit-transform: scale(1.6);
+		transform: scale(1.6);
+	}
+}
+
+figure.effect-chico:hover img {
+	opacity: 0.45;
+	-webkit-transform: scale(1.25);
+	transform: scale(1.25);
+}
+
+@media #{$screen-md-max} {
+	figure.effect-chico:hover img {
+		-webkit-transform: scale(1.5);
+		transform: scale(1.5);
+	}
+}
+
+figure.effect-chico figcaption {
+	padding: 3em;
+}
+
+@media #{$screen-md-max} {
+	figure.effect-chico figcaption {
+	padding: 1.3em;
+	}
+}
+
+figure.effect-chico figcaption::before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 1px solid #fff;
+	content: '';
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+figure.effect-chico figcaption::before,
+figure.effect-chico p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-chico h2 {
+	padding: 20% 0 20px 0;
+}
+
+@media #{$screen-md-max} {
+	figure.effect-chico h2 {
+	padding: 10% 0 12px 0;
+	}
+}
+
+figure.effect-chico h1 {
+	padding: 12% 0 20px 0;
+}
+
+@media #{$screen-md-max} {
+	figure.effect-chico h1 {
+	padding: 4% 0 12px 0;
+	}
+}
+
+@media #{$screen-sm-max} {
+	figure.effect-chico h1 {
+		padding: 14% 0 12px 0;
+	}
+}
+
+figure.effect-chico p {
+	margin: 0 auto;
+	max-width: 500px;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+    margin-bottom: 16px;
+}
+
+@media #{$screen-md-max} {
+	figure.effect-chico p {
+	margin-bottom: 30px;
+	max-width: 460px;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	}
+}
+
+figure.effect-chico:hover figcaption::before,
+figure.effect-chico:hover p {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-chico:hover a {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.blogbtn {
+    border: 2px solid rgba(255,255,255,1);
+    max-width: 400px;
+    margin-top: 36px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,.4);
+    color: #f7f7f7 !important;
+}
+
+.blogbtn:hover {
+    color: #3cb1dd !important;
+}

@@ -1,0 +1,35 @@
+.entry-content {
+	@extend %coolShadow;
+	background: rgba(255,255,255,.5);
+	padding: 18px;
+	border-radius: 9px;
+}
+
+.entry-content img {
+	border: 2px solid rgba(0,0,0,.7);
+	padding: 0px;
+}
+
+.post .entry-title,
+.post .entry-title a {
+	color: $blue-primary;
+}
+
+.post .entry-title:hover a {
+	color: $blue-light;
+}
+
+.postcontent {
+	@extend %coolShadow;
+	background: rgba(255,255,255,.5);
+	border: none;
+}
+
+.postlist article {
+	border: none;
+}
+
+.sidebar {
+	background: rgba(255,255,255,.5);
+	padding: 12px;
+}

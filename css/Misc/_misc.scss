@@ -1,0 +1,19 @@
+#nav-main, .nav-main {
+	margin: 0;
+}
+
+.contentclass {
+	padding-top: 0px;
+}
+
+#hp-container .col-md-6,
+#hp-container .col-md-12 {
+	padding-right: 7.5px !important;
+	padding-left: 7.5px !important;
+}
+
+/*SumoMe Hide PoweredBy Link*/
+.sumome-scrollbox-popup a,
+.sumome-modal .sumome-scrollbox-preview a {
+	display: none;
+}
