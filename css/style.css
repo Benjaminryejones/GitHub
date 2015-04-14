@@ -13,7 +13,7 @@ Template:       virtue_premium
 ========================================================================== */
 /*Variables*/
 /*Place Holders*/
-.entry-content, .postcontent {
+[itemprop="description articleBody"], .postcontent {
   -webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.03) inset, 0 0 0 1px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.03) inset, 0 0 0 1px rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.03) inset, 0 0 0 1px rgba(0, 0, 0, 0.15); }
@@ -229,9 +229,10 @@ figure.effect-chico:hover a {
 
 /* BLOG - The Other Elements of the CSS File.
 ========================================================================== */
-.entry-content {
+[itemprop="description articleBody"] {
   background: rgba(255, 255, 255, 0.5);
   padding: 18px;
+  padding-top: 2px;
   border-radius: 9px; }
 
 .entry-content img {
@@ -255,5 +256,3 @@ figure.effect-chico:hover a {
 .sidebar {
   background: rgba(255, 255, 255, 0.5);
   padding: 12px; }
-
-/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,16 @@
 /* ==== CV ================ */
 #btn-cv {
-		overflow: hidden;
+	overflow: hidden;
 	position: relative;
 	text-decoration: none;
+	padding: 8px 15px;
+	font-weight: 400;
+	line-height: 1.5;
+	text-align: center;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	border-color: #357ebd;
+	border-bottom: 3px solid darken(#357ebd, 10%);
+	background-color: #428bca;
+	color: #f7f7f7;
 }
