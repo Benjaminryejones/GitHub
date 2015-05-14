@@ -6,10 +6,22 @@
 	padding-top: 0px;
 }
 
+.headerclass {
+	border-bottom: 2px solid rgba(10,10,10,.07);
+}
+
 #hp-container .col-md-6,
 #hp-container .col-md-12 {
 	padding-right: 7.5px !important;
 	padding-left: 7.5px !important;
+}
+
+.row {
+	margin-bottom: 15px;
+}
+
+.headerclass > .container > .row {
+	margin-bottom: 0px;
 }
 
 /*SumoMe Hide PoweredBy Link*/

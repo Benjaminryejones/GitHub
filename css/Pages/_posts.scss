@@ -1,0 +1,33 @@
+/* Jiang Qing */
+.headshot {
+	-webkit-transition: all 0.35s;
+	-moz-transition: all 0.35s;
+	-o-transition: all 0.35s;
+	transition: all 0.35s;
+	position: relative;
+	background-image: url("http://ryejones.com/wp-content/uploads/2015/05/JQ.jpg");
+	border-radius: 50%;
+	border: 2px solid rgba(0,0,0,.1);
+	width: 180px;
+	height: 180px;
+	margin: 0 auto;
+
+	&:hover p {
+	      opacity: 1;
+	      margin-top: 70px;
+	}
+}
+
+.headshot p {
+	-webkit-transition: all 0.35s;
+	-moz-transition: all 0.35s;
+	-o-transition: all 0.35s;
+	transition: all 0.35s;
+	font-size: 16px;
+	font-weight: 700;
+	color: #f7f7f7;
+	opacity: 0;
+	text-align: center;
+	margin-top: 100px;
+	text-shadow: 0px 0px 6px rgba(0,0,0,.75);
+}
